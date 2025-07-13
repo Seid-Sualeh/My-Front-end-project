@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-end internship Projects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <i class="fas fa-code"></i>Seid<span>Sualeh</span>
+               
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#calculator">Calculator</a></li>
+                    <li><a href="#music">Music Player</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="section-title">
+                <h2>This is my Frontend Development Projects</h2>
+                <p> Image Gallery, Calculator & Music Player using HTML CSS and JavaScript on one page</p>
+            </div>
+            
+            <div class="project-nav">
+                <button class="project-btn active" data-target="gallery">Image Gallery</button>
+                <button class="project-btn" data-target="calculator">Calculator</button>
+                <button class="project-btn" data-target="music">Music Player</button>
+            </div>
+            
+            <!-- Image Gallery Project -->
+            <div id="gallery" class="project-section active">
+                <div class="gallery-controls">
+                    <button class="gallery-btn" id="prev-btn"><i class="fas fa-arrow-left"></i> Previous</button>
+                    <button class="gallery-btn" id="next-btn">Next <i class="fas fa-arrow-right"></i></button>
+                </div>
+                
+                <div class="gallery-container">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" alt="Nature">
+                        <div class="gallery-caption">
+                            <h3>Mountain Landscape</h3>
+                            <p>Beautiful mountain view at sunrise</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" alt="Nature">
+                        <div class="gallery-caption">
+                            <h3>Forest Pathway</h3>
+                            <p>Mystical forest with fog</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1426604966848-d7adac402bff?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" alt="Nature">
+                        <div class="gallery-caption">
+                            <h3>Sunset Fields</h3>
+                            <p>Golden hour in the countryside</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1476820865390-c52aeebb9891?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" alt="Nature">
+                        <div class="gallery-caption">
+                            <h3>Ocean Waves</h3>
+                            <p>Powerful waves crashing on rocks</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" alt="Nature">
+                        <div class="gallery-caption">
+                            <h3>Enchanted Forest</h3>
+                            <p>Sunlight through dense trees</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" alt="Nature">
+                        <div class="gallery-caption">
+                            <h3>Flower Field</h3>
+                            <p>Colorful flowers in bloom</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Calculator Project -->
+            <div id="calculator" class="project-section">
+                <div class="calculator">
+                    <div class="calculator-display">
+                        <div class="calculator-history" id="history">0</div>
+                        <div id="display">0</div>
+                    </div>
+                    <div class="calculator-buttons">
+                        <button class="calc-btn clear" data-value="clear">AC</button>
+                        <button class="calc-btn backspace" data-value="backspace"><i class="fas fa-backspace"></i></button>
+                        <button class="calc-btn operator" data-value="%">%</button>
+                        <button class="calc-btn operator" data-value="/">÷</button>
+                        
+                        <button class="calc-btn" data-value="7">7</button>
+                        <button class="calc-btn" data-value="8">8</button>
+                        <button class="calc-btn" data-value="9">9</button>
+                        <button class="calc-btn operator" data-value="*">×</button>
+                        
+                        <button class="calc-btn" data-value="4">4</button>
+                        <button class="calc-btn" data-value="5">5</button>
+                        <button class="calc-btn" data-value="6">6</button>
+                        <button class="calc-btn operator" data-value="-">-</button>
+                        
+                        <button class="calc-btn" data-value="1">1</button>
+                        <button class="calc-btn" data-value="2">2</button>
+                        <button class="calc-btn" data-value="3">3</button>
+                        <button class="calc-btn operator" data-value="+">+</button>
+                        
+                        <button class="calc-btn" data-value="0">0</button>
+                        <button class="calc-btn" data-value=".">.</button>
+                        <button class="calc-btn equals" data-value="=">=</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Music Player Project -->
+            <div id="music" class="project-section">
+                <div class="music-player">
+                    <div class="player-header">
+                        <h3> Music Player</h3>
+                        <p>Enjoy your favorite tunes</p>
+                    </div>
+                    
+                    <div class="player-content">
+                        <div class="album-art">
+                            <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&h=700" alt="Album Art">
+                        </div>
+                        
+                        <div class="player-controls">
+                            <div class="song-info">
+                                <h2 class="song-title">Electric Dreams</h2>
+                                <p class="song-artist">Neon Waves</p>
+                            </div>
+                            
+                            <div class="progress-container">
+                                <div class="progress-bar" id="progress-bar">
+                                    <div class="progress" id="progress"></div>
+                                </div>
+                                <div class="progress-time">
+                                    <span id="current-time">0:00</span>
+                                    <span id="duration">0:00</span>
+                                </div>
+                            </div>
+                            
+                            <div class="controls">
+                                <button class="control-btn" id="prev-btn"><i class="fas fa-step-backward"></i></button>
+                                <button class="control-btn play-btn" id="play-btn"><i class="fas fa-play"></i></button>
+                                <button class="control-btn" id="next-btn"><i class="fas fa-step-forward"></i></button>
+                            </div>
+                            
+                            <div class="volume-container">
+                                <i class="fas fa-volume-up"></i>
+                                <div class="volume-slider" id="volume-bar">
+                                    <div class="volume-progress" id="volume-progress"></div>
+                                </div>
+                                <i class="fas fa-volume-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="playlist">
+                        <h3 class="playlist-title">Playlist</h3>
+                        <div class="playlist-item active" data-song="0">
+                            <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100" alt="Song">
+                            <div class="playlist-info">
+                                <h4>Electric Dreams</h4>
+                                <p>Neon Waves</p>
+                            </div>
+                            <div class="playlist-duration">3:45</div>
+                        </div>
+                        <div class="playlist-item" data-song="1">
+                            <img src="https://images.unsplash.com/photo-1494232410401-ad00d5433cfa?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100" alt="Song">
+                            <div class="playlist-info">
+                                <h4>Summer Vibes</h4>
+                                <p>Tropical Beats</p>
+                            </div>
+                            <div class="playlist-duration">4:20</div>
+                        </div>
+                        <div class="playlist-item" data-song="2">
+                            <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100" alt="Song">
+                            <div class="playlist-info">
+                                <h4>Midnight Drive</h4>
+                                <p>Urban Echoes</p>
+                            </div>
+                            <div class="playlist-duration">3:55</div>
+                        </div>
+                        <div class="playlist-item" data-song="3">
+                            <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100" alt="Song">
+                            <div class="playlist-info">
+                                <h4>Starlight</h4>
+                                <p>Cosmic Harmony</p>
+                            </div>
+                            <div class="playlist-duration">4:10</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Lightbox -->
+    <div class="lightbox">
+        <div class="lightbox-content">
+            <img src="" alt="Lightbox Image">
+            <div class="lightbox-close"><i class="fas fa-times"></i></div>
+            <div class="lightbox-nav">
+                <button class="lightbox-btn" id="lightbox-prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="lightbox-btn" id="lightbox-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Seid Sualeh</div>
+                <p>Frontend Development Projects</p>
+                
+                <div class="footer-links">
+                    <a href="#gallery">Image Gallery</a>
+                    <a href="#calculator">Calculator</a>
+                    <a href="#music">Music Player</a>
+                </div>
+                
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/seid-sualih-92b938370"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#www.gitHub.com/seid-Sualeh"><i class="fab fa-github"></i></a>
+                    <a href="https://x.com/SualehSeid?t=IhJTRAhd6VKyUJm784PZbw&s=09"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                
+                <div class="copyright">
+                    &copy; 2025 Seid Sualih Frontend protects. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
